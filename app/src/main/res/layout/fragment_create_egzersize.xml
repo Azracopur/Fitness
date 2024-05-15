@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.createegzersize.CreateEgzersizeFragment">
+
+    <LinearLayout
+        android:id="@+id/image1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="onImageClick">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/kosubandi"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="Koşu bandında 1 dakika koşmanızda 100 kalori yakacaksınız" />
+
+        <TextView
+            android:id="@+id/description1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Koşu Bandı"
+            android:textSize="16sp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="onImageClick">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/kosmak"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="Tempolu şekilde 200 metre yol yürüdüğünüzde 100 kalori yakacaksınız" />
+
+        <TextView
+            android:id="@+id/description2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Tempolu Yürüyüş"
+            android:textSize="16sp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/image3Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="onImageClick">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/sinav"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="50 tane şınav çektiğinizde 25 kalori yakacaksınız" />
+
+        <TextView
+            android:id="@+id/description3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="ŞInav Hareketi"
+            android:textSize="16sp"
+            android:padding="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/image4Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="onImageClick">
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/mek"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="50 tane mekik çektiğinizde 25 kalori yakacaksınız" />
+
+        <TextView
+            android:id="@+id/description4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Mekik Hareketi"
+            android:textSize="16sp"
+            android:padding="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/image5Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="onImageClick">
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ipatlama"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="100 tane ip atladaığınızda 50 kalori yakacaksınız" />
+
+        <TextView
+            android:id="@+id/description8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="İp Atlama"
+            android:textSize="16sp"
+            android:padding="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/image6Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:onClick="onImageClick">
+
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/sagsol"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="Sağa eğilme ve Sola eğlme hareketinin her birinden 50 tane yaptığınızda 50 kalori yakacaksınız" />
+
+        <TextView
+            android:id="@+id/description9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Sağ Ve Sol Eğilme Hareketi"
+            android:textSize="16sp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

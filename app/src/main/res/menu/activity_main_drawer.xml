@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_createmenu"
+            android:icon="@drawable/menu2"
+            android:title="Menü Oluştur" />
+        <item
+            android:id="@+id/nav_addtomenu"
+            android:icon="@drawable/menu2"
+            android:title="Menüye Yiyecek Ekle" />
+        <item
+            android:id="@+id/nav_createegzersize"
+            android:icon="@drawable/menu2"
+            android:title="Egzersiz Oluştur" />
+        <item
+            android:id="@+id/nav_calculatecalori"
+            android:icon="@drawable/menu2"
+            android:title="Kalori Hesabı" />
+        <item
+            android:id="@+id/nav_bmi"
+            android:icon="@drawable/menu2"
+            android:title="BMI Hesabi" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/menu2"
+            android:title="Çıkış Yap" />
+    </group>
+</menu>

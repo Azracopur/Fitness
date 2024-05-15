@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addtomenu.AddToMenuFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/addtomenu_menusRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="166dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/addtomenu_selectedMenuTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Seçili Menu: "
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Rehber"
+                android:textColor="#000000" />
+
+            <!-- Adana Kebap -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/foodImageView1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/adana"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Yiyecek Resmi" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/foodNameTextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Adana Kebap"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/foodCaloriesTextView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kalori: 450"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <!-- Yiyecek düğmesi -->
+                    <Button
+                        android:id="@+id/foodButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menuye Ekle"
+                        android:onClick="onFoodItemClick"
+                        android:tag="Adana Kebap" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Diğer yiyeceklerin tanımlanması -->
+            <!-- İskender -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/foodImageView2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/iskender"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Yiyecek Resmi" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/foodNameTextView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="İskender"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/foodCaloriesTextView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kalori: 500"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <!-- Yiyecek düğmesi -->
+                    <Button
+                        android:id="@+id/foodButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menuye Ekle"
+                        android:onClick="onFoodItemClick"
+                        android:tag="İskender" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Köfte ve Patates Kızartması -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/foodImageView3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/koftepatatesjpg"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Yiyecek Resmi" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/foodNameTextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Köfte ve Patates Kızartması"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/foodCaloriesTextView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kalori: 600"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <!-- Yiyecek düğmesi -->
+                    <Button
+                        android:id="@+id/foodButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menuye Ekle"
+                        android:onClick="onFoodItemClick"
+                        android:tag="Köfte ve Patates Kızartması" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Beyti Kebap -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/foodImageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/beyti"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Yiyecek Resmi" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/foodNameTextView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Beyti Kebap"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/foodCaloriesTextView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kalori: 550"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <!-- Yiyecek düğmesi -->
+                    <Button
+                        android:id="@+id/foodButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menuye Ekle"
+                        android:onClick="onFoodItemClick"
+                        android:tag="Beyti Kebap" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="8dp"
+            android:text="Menünüze Yiyecek Ekleyiniz" />
+    </LinearLayout>
+</FrameLayout>
